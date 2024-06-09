@@ -1,0 +1,155 @@
+/* Font Family */
+#car-spec {
+    font-family: 'Pacifico', cursive;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+#main {
+    padding: 100px 20px 20px 20px;
+    text-align: center;
+}
+
+#car-preview {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.car-view {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.car-view img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.car-view.active {
+    display: block;
+}
+
+/* Styles for the view selector */
+#view-selector {
+    margin-top: 20px;
+    background-color: #a7f5b3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#view-selector h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#view-selector ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#view-selector li {
+    margin-bottom: 5px;
+}
+
+/* Styles for the car description */
+#car-spec {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#car-spec h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#car-spec ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#car-spec li {
+    margin-bottom: 5px;
+}
+
+#car-spec p {
+    line-height: 1.6;
+}
+
+#customization-options label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#color {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
